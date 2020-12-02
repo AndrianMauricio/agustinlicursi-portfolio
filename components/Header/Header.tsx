@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import cn from 'classnames'
+import styles from './styles.module.scss'
 
 export function Header() {
   return (
@@ -22,8 +23,13 @@ function Navigation() {
 
 function Banner() {
   return (
-    <div className="image-banner bg-cover bg-center grid grid-cols-2 grid-rows-1 h-96">
-      <h2 className="ubuntu flex items-center justify-center text-4xl text-center font-bold text-white">
+    <div
+      className={cn(
+        styles.imageBanner,
+        'bg-cover bg-center grid grid-cols-2 grid-rows-1 h-96',
+      )}
+    >
+      <h2 className="heading flex items-center justify-center text-4xl text-center font-bold text-white">
         Hola, me llamo Agustín:
         <br />
         UI/UX Designer.
@@ -73,7 +79,7 @@ function MenuLink({ href, label, title }: MenuLink) {
   return (
     <li
       className={cn(
-        'ubuntu font-bold text-sm text-white flex items-center border-b-4 transition-all duration-500 ease-in-out',
+        'heading font-bold text-sm text-white flex items-center border-b-4 transition-all duration-500 ease-in-out',
         router.pathname === href ? 'border-blue-500' : 'border-transparent',
       )}
     >

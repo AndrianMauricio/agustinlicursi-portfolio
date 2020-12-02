@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { Fragment } from 'react'
-import { Content } from '../components/Content'
-import { SubContent } from '../components/SubContent'
+import { Section } from '../components/Section'
+import { SubContent } from '../components/SubContents/SubContent'
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
         <title>Agustín Licursi</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Content title="Proyectos">
+      <Section title="Proyectos">
         <SubContent
           image="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
           details={{
@@ -42,9 +42,9 @@ export default function Home() {
           url="#"
           className="col-start-2 row-start-1 row-end-3"
         />
-      </Content>
+      </Section>
 
-      <Content title="Estudios" className="grid-cols-4">
+      <Section title="Estudios" className="grid-cols-4">
         <SubContent
           image="https://images.pexels.com/photos/4050287/pexels-photo-4050287.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
           url="#"
@@ -65,7 +65,7 @@ export default function Home() {
           url="#"
           className="row-start-2 col-start-4 col-end-5"
         />
-      </Content>
+      </Section>
     </Fragment>
   )
 }

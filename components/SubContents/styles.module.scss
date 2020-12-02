@@ -1,0 +1,25 @@
+.subContents {
+  height: 42rem;
+
+  .subContent {
+    & > .image {
+      pointer-events: none;
+    }
+
+    & > .caption {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+
+    &:hover {
+      & > .image {
+        transform: scale(1.05);
+      }
+
+      & > .caption {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+}
