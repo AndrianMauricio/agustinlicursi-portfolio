@@ -24,7 +24,7 @@ export default function Home() {
               tags: ['Heurísticas', 'Figma'],
               title: 'Aplicación de Heurísticas y Rediseño',
             }}
-            url="/work/aplicacion-de-heuristicas-y-rediseno"
+            url="/aplicacion-de-heuristicas-y-rediseno"
           />
           <SubContent
             image="https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500"
@@ -32,7 +32,7 @@ export default function Home() {
               tags: ['Photoshop', 'Illustrator'],
               title: 'Fotomontajes',
             }}
-            url="/work/fotomontajes"
+            url="/fotomontajes"
           />
           <SubContent
             image="https://images.pexels.com/photos/1236701/pexels-photo-1236701.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
@@ -46,7 +46,7 @@ export default function Home() {
               ],
               title: 'Caso de Estudio: Airbnb',
             }}
-            url="/work/caso-de-estudio-airbnb"
+            url="/caso-de-estudio-airbnb"
             className="col-start-2 row-start-1 row-end-3"
           />
         </Summary>

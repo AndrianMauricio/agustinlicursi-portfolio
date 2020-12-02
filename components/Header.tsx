@@ -37,7 +37,7 @@ function Logo() {
 function Menu() {
   return (
     <ul className="grid grid-flow-col gap-8 text-xs uppercase">
-      <MenuLink href="/" label="Trabajos" title="Trabajos" />
+      <MenuLink href="/" label="Trabajos" title="Trabajos" exact />
 
       <MenuLink href="/studies" label="Estudios" title="Estudios" />
 
