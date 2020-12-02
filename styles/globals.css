@@ -8,6 +8,7 @@
   body {
     font-family: Hind, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen,
       Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    @apply bg-gray-50;
   }
 
   .heading {

@@ -1,39 +1,20 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import cn from 'classnames'
-import styles from './styles.module.scss'
 
 export function Header() {
   return (
-    <header>
+    <header className="mt-16">
       <Navigation />
-      <Banner />
     </header>
   )
 }
 
 function Navigation() {
   return (
-    <div className="sticky top-0 bg-gray-800 flex justify-between items-center py-4 px-6">
+    <div className="fixed z-20 w-screen top-0 bg-gray-800 flex justify-between items-center py-4 px-6">
       <Logo />
       <Menu />
-    </div>
-  )
-}
-
-function Banner() {
-  return (
-    <div
-      className={cn(
-        styles.imageBanner,
-        'bg-cover bg-center grid grid-cols-2 grid-rows-1 h-96',
-      )}
-    >
-      <h2 className="heading flex items-center justify-center text-4xl text-center font-bold text-white">
-        Hola, me llamo Agustín:
-        <br />
-        UI/UX Designer.
-      </h2>
     </div>
   )
 }
@@ -56,7 +37,7 @@ function Logo() {
 function Menu() {
   return (
     <ul className="grid grid-flow-col gap-8 text-xs uppercase">
-      <MenuLink href="/" label="Inicio" title="Home" />
+      <MenuLink href="/" label="Inicio" title="Home" exact />
 
       <MenuLink href="/work" label="Trabajos" title="Work" />
 
@@ -71,16 +52,21 @@ interface MenuLink {
   href: string
   label: string
   title: string
+  exact?: boolean
 }
 
-function MenuLink({ href, label, title }: MenuLink) {
+function MenuLink({ href, label, title, exact = false }: MenuLink) {
   const router = useRouter()
+
+  const isActive = exact
+    ? router.pathname === href
+    : router.pathname.includes(href)
 
   return (
     <li
       className={cn(
         'heading py-1 font-bold text-sm text-white flex items-center border-b-4 transition-all duration-500 ease-in-out',
-        router.pathname === href ? 'border-blue-500' : 'border-transparent',
+        isActive ? 'border-blue-500' : 'border-transparent',
       )}
     >
       <Link href={href}>

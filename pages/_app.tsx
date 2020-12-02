@@ -1,8 +1,7 @@
 import { AppProps } from 'next/app'
 import { Fragment } from 'react'
-import { Header } from '../components/Header/Header'
-import { Body } from '../components/Body/Body'
-import { Footer } from '../components/Footer'
+import { Header } from 'components/Header'
+import { Footer } from 'components/Footer'
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -10,9 +9,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <Fragment>
       <Header />
 
-      <Body>
-        <Component {...pageProps} />
-      </Body>
+      <Component {...pageProps} />
 
       <Footer />
     </Fragment>

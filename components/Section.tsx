@@ -1,19 +1,42 @@
+import { H2 } from 'components/Heading'
 import { ReactNode } from 'react'
-import { SubContents } from './SubContents/SubContents'
+import cn from 'classnames'
 
 export interface SectionProps {
-  title: ReactNode
-  children: ReactNode
+  title: string
   className?: string
+  children: ReactNode
 }
 
-export function Section({ title, children, className }: SectionProps) {
+export function Section({ title, className, children }: SectionProps) {
   return (
-    <div className="my-24">
-      <h2 className="heading py-1 mb-12 uppercase font-bold text-3xl border-b-4 border-blue-500 w-min">
-        {title}
-      </h2>
-      <SubContents className={className}>{children}</SubContents>
+    <div className={cn('flex flex-col', className)}>
+      <H2 className="uppercase mb-6">{title}</H2>
+      {children}
     </div>
+  )
+}
+
+export interface TextSectionProps extends Omit<SectionProps, 'children'> {
+  children: string
+}
+
+export function TextSection({ title, children, className }: TextSectionProps) {
+  return (
+    <Section title={title} className={className}>
+      <p>{children}</p>
+    </Section>
+  )
+}
+
+export interface ItemsSectionProps extends Omit<SectionProps, 'children'> {
+  items: ReactNode
+}
+
+export function ItemsSection({ title, className, items }: ItemsSectionProps) {
+  return (
+    <Section title={title} className={className}>
+      <div className="flex justify-around">{items}</div>
+    </Section>
   )
 }

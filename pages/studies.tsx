@@ -1,6 +1,7 @@
 import { Fragment } from 'react'
 
 import Head from 'next/head'
+import { Body } from 'components/Body'
 
 export default function Studies() {
   return (
@@ -8,8 +9,9 @@ export default function Studies() {
       <Head>
         <title>Estudios</title>
       </Head>
-
-      <div>Estudios</div>
+      <Body>
+        <div>Estudios</div>
+      </Body>
     </Fragment>
   )
 }
