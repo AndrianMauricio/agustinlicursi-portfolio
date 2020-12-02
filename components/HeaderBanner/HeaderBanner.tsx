@@ -6,7 +6,7 @@ import { H1 } from 'components/Heading'
 
 export interface HeaderBannerProps {
   children: ReactNode
-  image: string
+  image?: string
 }
 
 export function HeaderBanner({ children, image }: HeaderBannerProps) {
@@ -19,7 +19,7 @@ export function HeaderBanner({ children, image }: HeaderBannerProps) {
         )}
       >
         <H1 className="text-4xl mt-56 mr-12">{children}</H1>
-        <img src={image} />
+        {image && <img src={image} />}
       </div>
     </div>
   )

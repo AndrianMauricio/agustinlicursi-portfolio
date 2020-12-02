@@ -39,9 +39,9 @@ function Menu() {
     <ul className="grid grid-flow-col gap-8 text-xs uppercase">
       <MenuLink href="/" label="Trabajos" title="Trabajos" exact />
 
-      <MenuLink href="/studies" label="Estudios" title="Estudios" />
+      <MenuLink href="/estudios" label="Estudios" title="Estudios" />
 
-      <MenuLink href="/about-me" label="Sobre Mi" title="Sobre Mi" />
+      <MenuLink href="/sobre-mi" label="Sobre Mi" title="Sobre Mi" />
     </ul>
   )
 }
