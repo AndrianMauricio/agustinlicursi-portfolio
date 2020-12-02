@@ -4,7 +4,7 @@ import cn from 'classnames'
 
 export function Header() {
   return (
-    <header className="mt-16">
+    <header className="h-16">
       <Navigation />
     </header>
   )
@@ -12,7 +12,7 @@ export function Header() {
 
 function Navigation() {
   return (
-    <div className="fixed z-20 w-screen top-0 bg-gray-800 flex justify-between items-center py-4 px-6">
+    <div className="h-16 fixed z-20 w-screen top-0 bg-gray-800 flex justify-between items-center px-6 shadow-xl">
       <Logo />
       <Menu />
     </div>
