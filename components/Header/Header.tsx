@@ -14,7 +14,7 @@ export function Header() {
 
 function Navigation() {
   return (
-    <div className="bg-gray-800 flex justify-between items-center py-4 px-6">
+    <div className="sticky top-0 bg-gray-800 flex justify-between items-center py-4 px-6">
       <Logo />
       <Menu />
     </div>
@@ -79,7 +79,7 @@ function MenuLink({ href, label, title }: MenuLink) {
   return (
     <li
       className={cn(
-        'heading font-bold text-sm text-white flex items-center border-b-4 transition-all duration-500 ease-in-out',
+        'heading py-1 font-bold text-sm text-white flex items-center border-b-4 transition-all duration-500 ease-in-out',
         router.pathname === href ? 'border-blue-500' : 'border-transparent',
       )}
     >

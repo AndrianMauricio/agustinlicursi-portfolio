@@ -1,3 +1,4 @@
+import Image from 'next/image'
 export interface SocialProps {
   url: string
   icon: string
@@ -14,8 +15,14 @@ export function Social({ url, icon, label, name }: SocialProps) {
       target="_blank"
       rel="noreferrer"
     >
-      <img src={icon} alt={'Logo de ' + name} className="w-10 h-10 mr-4" />
-      <span className="text-xs text-white">{label}</span>
+      <Image
+        src={icon}
+        alt={'Logo de ' + name}
+        width={64}
+        height={64}
+        layout="fixed"
+      />
+      <span className="ml-4 text-xs text-white">{label}</span>
     </a>
   )
 }
