@@ -8,7 +8,10 @@
 
     & > .caption {
       opacity: 0;
-      transform: translateY(100%);
+    }
+
+    & > .title {
+      opacity: 0;
     }
 
     &:hover {
@@ -17,8 +20,11 @@
       }
 
       & > .caption {
+        opacity: 0.85;
+      }
+
+      & > .title {
         opacity: 1;
-        transform: translateY(0);
       }
     }
   }

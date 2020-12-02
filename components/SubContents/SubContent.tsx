@@ -3,53 +3,47 @@ import Link from 'next/link'
 import styles from './styles.module.scss'
 
 export interface SubContentProps {
-  details?: {
-    tags: string[]
-    title: string
-  }
+  title: string
   image: string
   url: string
   className?: string
 }
 
-export function SubContent({
-  details,
-  className,
-  image,
-  url,
-}: SubContentProps) {
+export function SubContent({ className, image, url, title }: SubContentProps) {
   return (
     <Link href={url}>
       <a
         className={cn(
           styles.subContent,
-          'transition-all duration-500 ease-in-out hover:shadow-2xl shadow-lg flex items-end overflow-hidden rounded-lg bg-gray-300 relative',
+          'transition-all ease-in-out duration-500',
+          'flex items-center justify-center hover:shadow-2xl shadow-lg overflow-hidden rounded-lg bg-gray-300 relative',
           className,
         )}
       >
-        {details && (
-          <span
-            className={cn(
-              styles.caption,
-              'z-10 flex flex-col gap-3 bg-white p-3 w-full bg-opacity-90 transition-all duration-500 ease-in-out',
-            )}
-          >
-            <span className="text-sm uppercase">
-              {details.tags.join(' / ')}
-            </span>
-            <span className="heading text-xl uppercase font-medium">
-              {details.title}
-            </span>
-            <span className="heading text-base font-bold bg-blue-500 hover:bg-blue-800 transition-all duration-500 ease-in-out rounded-md text-white flex items-center justify-center uppercase w-16 h-8">
-              Ver
-            </span>
-          </span>
-        )}
+        <h2
+          className={cn(
+            styles.title,
+            'transition-all ease-in-out duration-500',
+            'heading relative z-20 text-white text-center text-3xl uppercase font-bold',
+          )}
+        >
+          {title}
+        </h2>
+
+        <span
+          className={cn(
+            styles.caption,
+            'transition-all ease-in-out duration-500',
+            'bg-gray-800',
+            'absolute z-10 h-full w-full flex items-center justify-center',
+          )}
+        ></span>
 
         <span
           className={cn(
             styles.image,
-            'pointer-events-none absolute block w-full h-full bg-cover bg-center transition-all ease-in-out duration-1000',
+            'transition-all ease-in-out duration-500',
+            'z-0 pointer-events-none absolute block w-full h-full bg-cover bg-center',
           )}
           style={{
             backgroundImage: `url("${image}")`,

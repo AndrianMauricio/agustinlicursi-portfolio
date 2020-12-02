@@ -20,55 +20,44 @@ export default function Home() {
         <Summary title="Proyectos">
           <SubContent
             image="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-            details={{
-              tags: ['Heurísticas', 'Figma'],
-              title: 'Aplicación de Heurísticas y Rediseño',
-            }}
+            title="APLICACIÓN DE HEURÍSTICAS Y REDISEÑO"
             url="/aplicacion-de-heuristicas-y-rediseno"
           />
           <SubContent
             image="https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-            details={{
-              tags: ['Photoshop', 'Illustrator'],
-              title: 'Fotomontajes',
-            }}
+            title="Fotomontajes"
             url="/fotomontajes"
           />
           <SubContent
             image="https://images.pexels.com/photos/1236701/pexels-photo-1236701.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-            details={{
-              tags: [
-                'Heurísticas',
-                'Gestalt',
-                'Card Sorting',
-                'Personas',
-                'Journey Map',
-              ],
-              title: 'Caso de Estudio: Airbnb',
-            }}
+            title="caso de estudio: airbnb"
             url="/caso-de-estudio-airbnb"
             className="col-start-2 row-start-1 row-end-3"
           />
         </Summary>
         <Summary title="Estudios" className="grid-cols-4">
           <SubContent
-            image="https://images.pexels.com/photos/4050287/pexels-photo-4050287.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-            url="#"
+            title="UI / UX"
+            image="/images/ux.jpg"
+            url="/estudios"
             className="col-start-1 col-end-3 row-start-1 row-end-3"
           />
           <SubContent
-            image="https://images.pexels.com/photos/4144923/pexels-photo-4144923.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-            url="#"
+            title="FOTOGRAFÍA Y VIDEO"
+            image="/images/photo-video.jpg"
+            url="/estudios"
             className="col-start-3 col-end-5 row-start-1 row-end-2"
           />
           <SubContent
-            image="https://images.pexels.com/photos/4384147/pexels-photo-4384147.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-            url="#"
+            title="METODOLOGÍAS"
+            image="/images/scrum.jpg"
+            url="/estudios"
             className="row-start-2 col-start-3 col-end-4"
           />
           <SubContent
-            image="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-            url="#"
+            title="marketing"
+            image="/images/marketing.jpg"
+            url="/estudios"
             className="row-start-2 col-start-4 col-end-5"
           />
         </Summary>{' '}

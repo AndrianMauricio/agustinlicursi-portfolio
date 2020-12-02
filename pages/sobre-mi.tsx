@@ -1,6 +1,6 @@
 import { Body } from 'components/Body'
 import { HeaderBanner } from 'components/HeaderBanner'
-import { Fragment, ReactNode } from 'react'
+import { Fragment } from 'react'
 import { Card } from 'components/Card'
 import Head from 'next/head'
 
