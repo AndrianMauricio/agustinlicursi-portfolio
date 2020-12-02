@@ -12,7 +12,7 @@ export default function AirbnbStudyCase() {
   return (
     <Fragment>
       <Head>
-        <title>Caso de Estudio: Airbnb | Trabajos</title>
+        <title>Caso de Estudio: Airbnb | Trabajos | Agustín Licursi</title>
       </Head>
 
       <HeaderBanner image="/images/airbnb-case-header.svg">

@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <Fragment>
       <Head>
-        <title>Agustín Licursi</title>
+        <title>Trabajos | Agustín Licursi</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -82,7 +82,7 @@ function Banner() {
     <div
       className={cn(
         styles.imageBanner,
-        'bg-cover bg-center grid grid-cols-2 grid-rows-1 h-96',
+        'bg-cover bg-center grid grid-cols-2 grid-rows-1',
       )}
     >
       <h2 className="heading flex items-center justify-center text-4xl text-center font-bold text-white">

@@ -12,7 +12,9 @@ export default function HeuristicsApplicationAndRedesign() {
   return (
     <Fragment>
       <Head>
-        <title>Aplicación de Heurísticas y Rediseño | Trabajos</title>
+        <title>
+          Aplicación de Heurísticas y Rediseño | Trabajos | Agustín Licursi
+        </title>
       </Head>
 
       <HeaderBanner image="/images/heuristics-redisign-header.svg">

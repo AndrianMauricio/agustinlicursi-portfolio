@@ -37,13 +37,11 @@ function Logo() {
 function Menu() {
   return (
     <ul className="grid grid-flow-col gap-8 text-xs uppercase">
-      <MenuLink href="/" label="Inicio" title="Home" exact />
+      <MenuLink href="/" label="Trabajos" title="Trabajos" />
 
-      <MenuLink href="/work" label="Trabajos" title="Work" />
+      <MenuLink href="/studies" label="Estudios" title="Estudios" />
 
-      <MenuLink href="/studies" label="Estudios" title="Studies" />
-
-      <MenuLink href="/about-me" label="Sobre Mi" title="About Me" />
+      <MenuLink href="/about-me" label="Sobre Mi" title="Sobre Mi" />
     </ul>
   )
 }

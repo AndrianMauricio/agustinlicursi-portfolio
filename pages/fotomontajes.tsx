@@ -1,18 +1,13 @@
 import { Body } from 'components/Body'
 import { HeaderBanner } from 'components/HeaderBanner'
 import { Fragment } from 'react'
-import { Card } from 'components/Card'
-import { TextSection, ItemsSection } from 'components/Section'
 import Head from 'next/head'
-import { Images } from 'components/Images'
-import { Content } from 'components/Content'
-import { Heading2 } from 'components/Heading2'
 
 export default function Photomontage() {
   return (
     <Fragment>
       <Head>
-        <title>Fotomontajes | Trabajos</title>
+        <title>Fotomontajes | Trabajos | Agustín Licursi</title>
       </Head>
 
       <HeaderBanner image="/images/photomontage.svg">Fotomontajes</HeaderBanner>
@@ -20,20 +15,20 @@ export default function Photomontage() {
       <Body>
         <Photo
           name="Foto 1"
-          urlLeft="/images/photo-1-steps.jpg"
-          urlRight="/images/photo-1-final.jpg"
+          urlLeft="/images/photo-1-process.png"
+          urlRight="/images/photo-1-final.png"
         />
 
         <Photo
           name="Foto 2"
-          urlLeft="/images/photo-2-steps.jpg"
-          urlRight="/images/photo-2-final.jpg"
+          urlLeft="/images/photo-2-process.png"
+          urlRight="/images/photo-2-final.png"
         />
 
         <Photo
           name="Foto 3"
-          urlLeft="/images/photo-3-steps.jpg"
-          urlRight="/images/photo-3-final.jpg"
+          urlLeft="/images/photo-3-process.png"
+          urlRight="/images/photo-3-final.png"
         />
       </Body>
     </Fragment>
