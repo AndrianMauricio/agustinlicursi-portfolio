@@ -4,6 +4,7 @@
   .subContent {
     & > .image {
       pointer-events: none;
+      filter: sepia(100%) saturate(250%) hue-rotate(170deg) grayscale(100%);
     }
 
     & > .caption {
@@ -17,6 +18,7 @@
     &:hover {
       & > .image {
         transform: scale(1.05);
+        filter: sepia(100%) saturate(250%) hue-rotate(170deg) grayscale(0%);
       }
 
       & > .caption {

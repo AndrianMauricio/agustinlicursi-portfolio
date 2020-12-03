@@ -1,4 +1,5 @@
 import cn from 'classnames'
+import styles from './Picture.module.scss'
 
 export interface PictureProps {
   src?: string
@@ -10,6 +11,7 @@ export function Picture({ src, title, className, ...props }: PictureProps) {
   return (
     <div
       className={cn(
+        styles.picture,
         { 'bg-gray-500': src },
         'rounded-lg shadow-lg overflow-hidden relative',
         className,
@@ -19,6 +21,8 @@ export function Picture({ src, title, className, ...props }: PictureProps) {
       {title && (
         <div
           className={cn(
+            styles.title,
+            'transition-all duration-500 ease-in-out',
             'heading text-white uppercase font-medium',
             'flex items-center justify-start',
             'p-10',

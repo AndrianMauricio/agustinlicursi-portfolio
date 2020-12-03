@@ -58,10 +58,6 @@ export default function HeuristicsApplicationAndRedesign() {
               y se puede aplicar en etapas tempranas de un proyecto o incluso
               (como en este caso) en una aplicación existente.
             </TextSection>
-            <img
-              src="/images/creative-process.svg"
-              className="col-span-2 mx-auto"
-            />
           </div>
         </Card>
 

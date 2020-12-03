@@ -24,7 +24,7 @@ export default function Home() {
             url="/aplicacion-de-heuristicas-y-rediseno"
           />
           <SubContent
-            image="/images/photo-3-final.png"
+            image="/images/photomontage/photo-3-final.png"
             title="Fotomontajes"
             url="/fotomontajes"
           />

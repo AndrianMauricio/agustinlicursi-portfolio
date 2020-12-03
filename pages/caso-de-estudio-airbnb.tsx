@@ -60,7 +60,7 @@ export default function AirbnbStudyCase() {
             Gestalt.
           </p>
         </Content>
-        <Images className="grid-cols-2" height="36rem">
+        <Images className="grid-cols-2" height="31rem">
           <Picture
             src="/images/airbnb/principio-de-proximidad.png"
             title="PRINCIPIO DE PROXIMIDAD"
@@ -81,7 +81,7 @@ export default function AirbnbStudyCase() {
             cumplimiento de las mismas.
           </p>
         </Content>
-        <Images className="grid-cols-2 grid-rows-2">
+        <Images className="grid-cols-2 grid-rows-2" height="31rem">
           <Picture
             title="HABLAR EL LENGUAJE DEL USUARIO"
             src="/images/airbnb/lenguaje-de-los-usuarios.png"

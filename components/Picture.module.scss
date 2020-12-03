@@ -1,0 +1,13 @@
+.picture {
+  .title {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  &:hover {
+    .title {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
