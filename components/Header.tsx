@@ -42,7 +42,12 @@ function Menu() {
 
       <MenuLink href="/estudios" label="Estudios" title="Estudios" />
 
-      <MenuLink href="/sobre-mi" label="Sobre Mi" title="Sobre Mi" />
+      <MenuLink
+        href="/sobre-mi"
+        label="Sobre Mi"
+        title="Sobre Mi"
+        className="mr-6"
+      />
     </ul>
   )
 }
@@ -53,9 +58,17 @@ interface MenuLink {
   title: string
   exact?: boolean
   match?: (pathname: string) => boolean
+  className?: string
 }
 
-function MenuLink({ href, label, title, exact = false, match }: MenuLink) {
+function MenuLink({
+  href,
+  label,
+  title,
+  exact = false,
+  match,
+  className,
+}: MenuLink) {
   const router = useRouter()
 
   const isActive =
@@ -70,6 +83,7 @@ function MenuLink({ href, label, title, exact = false, match }: MenuLink) {
       className={cn(
         'heading py-1 font-bold text-sm text-white flex items-center border-b-4 transition-all duration-500 ease-in-out',
         isActive ? 'border-blue-500' : 'border-transparent',
+        className,
       )}
     >
       <Link href={href}>
