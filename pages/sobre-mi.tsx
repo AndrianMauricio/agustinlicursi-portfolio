@@ -11,7 +11,7 @@ export default function AboutMe() {
         <title>Sobre Mi | Agustín Licursi</title>
       </Head>
 
-      <HeaderBanner image="/images/about-me.svg">Sobre Mi</HeaderBanner>
+      <HeaderBanner image="/images/about-me.svg">Sobre Mí</HeaderBanner>
 
       <Body>
         <Card>
@@ -51,7 +51,7 @@ export default function AboutMe() {
             </div>
             <div>
               <a
-                href="#"
+                href="https://drive.google.com/file/d/1YwDVtha_aO1lJ0rnLjh4XppVg_2OIi34/view?usp=sharing"
                 target="_blank"
                 rel="noopener"
                 className="inline-flex items-center justify-center w-40 h-12 bg-blue-500 text-white heading font-bold text-lg rounded-md"
