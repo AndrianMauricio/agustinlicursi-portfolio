@@ -1,13 +1,13 @@
 import { Body } from 'components/Body'
 import { HeaderBanner } from 'components/HeaderBanner'
-import { Fragment, ReactNode } from 'react'
+import { Fragment } from 'react'
 import { Card } from 'components/Card'
-import { TextSection, ItemsSection } from 'components/Section'
+import { TextSection, ItemsSection, Item } from 'components/Section'
 import Head from 'next/head'
 import { Images } from 'components/Images'
 import { Content } from 'components/Content'
 import { Heading2 } from 'components/Heading2'
-import cn from 'classnames'
+import { Picture } from 'components/Picture'
 
 export default function AirbnbStudyCase() {
   return (
@@ -32,10 +32,18 @@ export default function AirbnbStudyCase() {
               title="Recursos"
               items={
                 <Fragment>
-                  <div className="bg-blue-500 w-12 h-12 rounded-full"></div>
-                  <div className="bg-blue-500 w-12 h-12 rounded-full"></div>
-                  <div className="bg-blue-500 w-12 h-12 rounded-full"></div>
-                  <div className="bg-blue-500 w-12 h-12 rounded-full"></div>
+                  <Item
+                    src="/images/logos/optimal-workshop.svg"
+                    name="Optimal Workshop"
+                    href="https://www.optimalworkshop.com/"
+                  />
+                  <Item
+                    src="/images/logos/encuesta.png"
+                    name="Encuesta.com"
+                    href="https://encuesta.com/"
+                  />
+                  <Item src="/images/logos/photoshop.png" name="Photoshop" />
+                  <Item src="/images/logos/powerpoint.png" name="PowerPoint" />
                 </Fragment>
               }
               className="col-span-2"
@@ -142,36 +150,5 @@ export default function AirbnbStudyCase() {
         </Images>
       </Body>
     </Fragment>
-  )
-}
-
-interface PictureProps {
-  src?: string
-  title?: string
-  className?: string
-}
-
-function Picture({ src, title, className }: PictureProps) {
-  return (
-    <div
-      className={cn(
-        'bg-gray-500 rounded-lg shadow-lg overflow-hidden relative',
-        className,
-      )}
-    >
-      {title && (
-        <div
-          className={cn(
-            'heading text-white uppercase font-medium',
-            'flex items-center justify-start',
-            'p-10',
-            'bg-blue-500 bg-opacity-90 absolute w-full h-20 bottom-0',
-          )}
-        >
-          {title}
-        </div>
-      )}
-      <img className="object-cover w-full h-full" src={src} />
-    </div>
   )
 }

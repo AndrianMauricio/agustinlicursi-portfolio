@@ -2,11 +2,12 @@ import { Body } from 'components/Body'
 import { HeaderBanner } from 'components/HeaderBanner'
 import { Fragment } from 'react'
 import { Card } from 'components/Card'
-import { TextSection, ItemsSection } from 'components/Section'
+import { TextSection, ItemsSection, Item } from 'components/Section'
 import Head from 'next/head'
 import { Images } from 'components/Images'
 import { Content } from 'components/Content'
 import { Heading2 } from 'components/Heading2'
+import { Picture } from 'components/Picture'
 
 export default function HeuristicsApplicationAndRedesign() {
   return (
@@ -36,10 +37,13 @@ export default function HeuristicsApplicationAndRedesign() {
               title="Recursos"
               items={
                 <Fragment>
-                  <div className="bg-blue-500 w-12 h-12 rounded-full"></div>
-                  <div className="bg-blue-500 w-12 h-12 rounded-full"></div>
-                  <div className="bg-blue-500 w-12 h-12 rounded-full"></div>
-                  <div className="bg-blue-500 w-12 h-12 rounded-full"></div>
+                  <Item
+                    src="/images/logos/figma.svg"
+                    name="Figma"
+                    href="https://figma.com/"
+                  />
+                  <Item src="/images/logos/photoshop.png" name="Photoshop" />
+                  <Item src="/images/logos/powerpoint.png" name="PowerPoint" />
                 </Fragment>
               }
               className="col-span-2"
@@ -72,8 +76,15 @@ export default function HeuristicsApplicationAndRedesign() {
             cumplir su función en relación a ello.
           </p>
         </Content>
-        <Images>
-          <div className="bg-gray-500 rounded-lg shadow-lg mx-28"></div>
+        <Images className="grid-cols-2" height="32rem">
+          <Picture
+            src="/images/heuristics-redesign/rob01.png"
+            className="ml-28"
+          />
+          <Picture
+            src="/images/heuristics-redesign/rob02.png"
+            className="mr-28"
+          />
         </Images>
 
         <Content>
@@ -84,8 +95,11 @@ export default function HeuristicsApplicationAndRedesign() {
             proceso, de modo que el usuario no pierda tiempo escribiendo.
           </p>
         </Content>
-        <Images>
-          <div className="bg-gray-500 rounded-lg shadow-lg mx-28"></div>
+        <Images height="32rem">
+          <Picture
+            src="/images/heuristics-redesign/rob03.png"
+            className="mx-28"
+          />
         </Images>
 
         <Content>
@@ -112,41 +126,26 @@ export default function HeuristicsApplicationAndRedesign() {
                   con conexión a Internet.
                 </p>
               </div>
-              <div className="bg-gray-500 rounded-lg shadow-lg"></div>
+              <Picture src="/images/heuristics-redesign/rob04.png" />
             </div>
           </div>
         </Content>
 
         <Heading2>REDISEÑO TENTATIVO</Heading2>
-        <Content>
-          <p>
-            <strong>Hablar el lenguaje del usuario:</strong> el sistema debe
-            adaptarse al usuario y este debe entender inmediatamente los
-            enunciados y descripciones. Las mismas deben ser simples y concisas.
-            Tanto la iconografía como las imagénes del sitio deben ajustarse en
-            la medida de lo posible al modelo mental de nuestros usuarios y
-            cumplir su función en relación a ello.
-          </p>
-        </Content>
-        <Images>
-          <div className="bg-gray-500 rounded-lg shadow-lg mx-28"></div>
+        <Card>
+          <TextSection title="PROYECTO EN PROCESO" className="col-span-4">
+            Actualmente este es uno de los proyectos en los que estoy
+            trabajando, rediseñar toda la suite de aplicaciones de negocios,
+            aplicando los conocimientos adquiridios en materia de UX y continuar
+            perfeccionarme para lograr que las herramientas se . conjuntamente
+            con formación a los usuarios para lograr
+          </TextSection>
+        </Card>
+        <Images height="50rem">
+          <Picture src="/images/heuristics-redesign/rob05.svg" />
         </Images>
-        <Images>
-          <div className="bg-gray-500 rounded-lg shadow-lg mx-28"></div>
-        </Images>
-
-        <Content>
-          <p>
-            <strong>Hablar el lenguaje del usuario:</strong> el sistema debe
-            adaptarse al usuario y este debe entender inmediatamente los
-            enunciados y descripciones. Las mismas deben ser simples y concisas.
-            Tanto la iconografía como las imagénes del sitio deben ajustarse en
-            la medida de lo posible al modelo mental de nuestros usuarios y
-            cumplir su función en relación a ello.
-          </p>
-        </Content>
-        <Images>
-          <div className="bg-gray-500 rounded-lg shadow-lg mx-28"></div>
+        <Images height="50rem">
+          <Picture src="/images/heuristics-redesign/rob06.svg" />
         </Images>
       </Body>
     </Fragment>
