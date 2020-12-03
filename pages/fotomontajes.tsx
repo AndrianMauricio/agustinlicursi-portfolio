@@ -15,20 +15,20 @@ export default function Photomontage() {
       <Body>
         <Photo
           name="Foto 1"
-          urlLeft="/images/photo-1-process.png"
-          urlRight="/images/photo-1-final.png"
+          urlLeft="/images/photomontage/photo-1-process.png"
+          urlRight="/images/photomontage/photo-1-final.png"
         />
 
         <Photo
           name="Foto 2"
-          urlLeft="/images/photo-2-process.png"
-          urlRight="/images/photo-2-final.png"
+          urlLeft="/images/photomontage/photo-2-process.png"
+          urlRight="/images/photomontage/photo-2-final.png"
         />
 
         <Photo
           name="Foto 3"
-          urlLeft="/images/photo-3-process.png"
-          urlRight="/images/photo-3-final.png"
+          urlLeft="/images/photomontage/photo-3-process.png"
+          urlRight="/images/photomontage/photo-3-final.png"
         />
       </Body>
     </Fragment>

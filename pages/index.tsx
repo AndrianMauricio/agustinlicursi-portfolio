@@ -19,17 +19,17 @@ export default function Home() {
       <Body>
         <Summary title="Proyectos">
           <SubContent
-            image="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            image="/images/heuristics-redesign.png"
             title="APLICACIÓN DE HEURÍSTICAS Y REDISEÑO"
             url="/aplicacion-de-heuristicas-y-rediseno"
           />
           <SubContent
-            image="https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            image="/images/photo-3-final.png"
             title="Fotomontajes"
             url="/fotomontajes"
           />
           <SubContent
-            image="https://images.pexels.com/photos/1236701/pexels-photo-1236701.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            image="/images/airbnb-case-study.jpg"
             title="caso de estudio: airbnb"
             url="/caso-de-estudio-airbnb"
             className="col-start-2 row-start-1 row-end-3"

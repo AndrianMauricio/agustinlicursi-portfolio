@@ -144,8 +144,8 @@ export default function HeuristicsApplicationAndRedesign() {
         <Images height="50rem">
           <Picture src="/images/heuristics-redesign/rob05.svg" />
         </Images>
-        <Images height="50rem">
-          <Picture src="/images/heuristics-redesign/rob06.svg" />
+        <Images height="45rem">
+          <Picture src="/images/heuristics-redesign/rob06.png" />
         </Images>
       </Body>
     </Fragment>

@@ -19,7 +19,7 @@ export function HeaderBanner({ children, image }: HeaderBannerProps) {
         )}
       >
         <H1 className="text-4xl mt-56 mr-12">{children}</H1>
-        {image && <img src={image} />}
+        {image && <img src={image} className="h-full max-h-96" />}
       </div>
     </div>
   )

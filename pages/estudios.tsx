@@ -11,28 +11,30 @@ export default function Studies() {
         <title>Estudios | Agustín Licursi</title>
       </Head>
 
-      <HeaderBanner image="/images/airbnb-case-header.svg">
-        Estudios
-      </HeaderBanner>
+      <HeaderBanner image="/images/studies.svg">Estudios</HeaderBanner>
 
       <Body>
         <Carreer title="UI/UX">
           <Study
+            image="/images/logos/utn.png"
             title="Experto en Diseño de Experiencias de Usuario e Interacciones"
             place="UTN E - Learning"
             year="2020"
           />
           <Study
+            image="/images/logos/utn.png"
             title="Producción de Videojuegos con Métodos UX"
             place="UTN E - Learning"
             year="2020"
           />
           <Study
+            image="/images/logos/utn.png"
             title="Experto en Diseño de Experiencias de Usuario e Interacciones"
             place="UTN E - Learning"
             year="2020"
           />
           <Study
+            image="/images/logos/utn.png"
             title="Introducción a UX"
             place="UTN E - Learning"
             year="2020"
@@ -41,16 +43,19 @@ export default function Studies() {
 
         <Carreer title="MARKETING">
           <Study
+            image="/images/logos/educacion-it.jpg"
             title="Introducción al Marketing Digital"
             place="Educación IT"
             year="2020"
           />
           <Study
+            image="/images/logos/educacion-it.jpg"
             title="Marketing de Contenido y Viralización"
             place="Educación IT"
             year="2020"
           />
           <Study
+            image="/images/logos/college.png"
             title="Tecnicatura Superior en Administración"
             place="Instituto Superior Misericordia"
             year="2012 - 2014"
@@ -59,6 +64,7 @@ export default function Studies() {
 
         <Carreer title="FOTOGRAFÍA Y VIDEO">
           <Study
+            image="/images/logos/domestika.png"
             title="Introducción a Photoshop"
             place="Domestika"
             year="2020"
@@ -67,6 +73,7 @@ export default function Studies() {
 
         <Carreer title="METODOLOGÍAS DE TRABAJO">
           <Study
+            image="/images/logos/crehana.png"
             title="SCRUM: Gestionando equipos de trabajo"
             place="Crehana"
             year="2020"
@@ -86,17 +93,19 @@ function Heading({ children }: HeadingProps) {
 }
 
 interface StudyProps {
-  // image: string
+  image: string
   title: string
   place: string
   year: string
 }
 
-function Study({ title, place, year }: StudyProps) {
+function Study({ title, place, year, image }: StudyProps) {
   return (
     <Card>
       <div className="flex items-center gap-8">
-        <div className="bg-blue-500 w-24 h-24 rounded-full flex-shrink-0" />
+        <div className="bg-blue-50 w-24 h-24 rounded-full flex-shrink-0 overflow-hidden">
+          <img src={image} className="object-fill w-full h-full" />
+        </div>
         <div className="flex flex-col gap-2">
           <p className="heading font-bold text-lg">{title}</p>
           <p className="text-gray-400">{place}</p>

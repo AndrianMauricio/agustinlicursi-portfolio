@@ -11,9 +11,7 @@ export default function AboutMe() {
         <title>Sobre Mi | Agustín Licursi</title>
       </Head>
 
-      <HeaderBanner image="/images/airbnb-case-header.svg">
-        Sobre Mi
-      </HeaderBanner>
+      <HeaderBanner image="/images/about-me.svg">Sobre Mi</HeaderBanner>
 
       <Body>
         <Card>
