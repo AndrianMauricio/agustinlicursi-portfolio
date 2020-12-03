@@ -21,17 +21,17 @@ export default function Home() {
           <SubContent
             image="/images/heuristics-redesign.png"
             title="APLICACIÓN DE HEURÍSTICAS Y REDISEÑO"
-            url="/aplicacion-de-heuristicas-y-rediseno"
+            url="/trabajos/aplicacion-de-heuristicas-y-rediseno"
           />
           <SubContent
             image="/images/photomontage/photo-3-final.png"
             title="Fotomontajes"
-            url="/fotomontajes"
+            url="/trabajos/fotomontajes"
           />
           <SubContent
             image="/images/airbnb-case-study.jpg"
             title="caso de estudio: airbnb"
-            url="/caso-de-estudio-airbnb"
+            url="/trabajos/caso-de-estudio-airbnb"
             className="col-start-2 row-start-1 row-end-3"
           />
         </Summary>

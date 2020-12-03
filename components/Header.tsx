@@ -37,7 +37,12 @@ function Logo() {
 function Menu() {
   return (
     <ul className="grid grid-flow-col gap-8 text-xs uppercase">
-      <MenuLink href="/" label="Trabajos" title="Trabajos" exact />
+      <MenuLink
+        href="/"
+        label="Trabajos"
+        title="Trabajos"
+        match={pn => pn.includes('trabajos') || pn === '/'}
+      />
 
       <MenuLink href="/estudios" label="Estudios" title="Estudios" />
 
@@ -51,14 +56,18 @@ interface MenuLink {
   label: string
   title: string
   exact?: boolean
+  match?: (pathname: string) => boolean
 }
 
-function MenuLink({ href, label, title, exact = false }: MenuLink) {
+function MenuLink({ href, label, title, exact = false, match }: MenuLink) {
   const router = useRouter()
 
-  const isActive = exact
-    ? router.pathname === href
-    : router.pathname.includes(href)
+  const isActive =
+    match != null
+      ? match(router.pathname)
+      : exact
+      ? router.pathname === href
+      : router.pathname.includes(href)
 
   return (
     <li
