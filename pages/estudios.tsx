@@ -22,21 +22,15 @@ export default function Studies() {
             year="2020"
           />
           <Study
-            image="/images/logos/utn.png"
+            image="/images/logos/domestika.png"
             title="Producción de Videojuegos con Métodos UX"
-            place="UTN E - Learning"
+            place="Domestika"
             year="2020"
           />
           <Study
-            image="/images/logos/utn.png"
-            title="Experto en Diseño de Experiencias de Usuario e Interacciones"
-            place="UTN E - Learning"
-            year="2020"
-          />
-          <Study
-            image="/images/logos/utn.png"
+            image="/images/logos/educacion-it.jpg"
             title="Introducción a UX"
-            place="UTN E - Learning"
+            place="Educación IT"
             year="2020"
           />
         </Carreer>

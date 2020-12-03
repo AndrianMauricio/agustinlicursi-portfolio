@@ -38,7 +38,7 @@ export default function Home() {
         <Summary title="Estudios" className="grid-cols-4">
           <SubContent
             title="UI / UX"
-            image="/images/ux.jpg"
+            image="/images/ux-ui.png"
             url="/estudios"
             className="col-start-1 col-end-3 row-start-1 row-end-3"
           />

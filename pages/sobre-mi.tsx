@@ -18,21 +18,36 @@ export default function AboutMe() {
           <div className="flex flex-col justify-between">
             <div className="flex justify-between">
               <div>
-                <h2 className="font-bold heading text-2xl mb-8">
+                <h2 className="font-bold heading text-2xl mb-12">
                   Construyamos algo juntos.
                 </h2>
-                <p>
-                  Para reducir las fricciones con las partes interesadas decidí
-                  realizar un análisis utilizando las reglas heurísticas para
-                  que pudiesen ver cómo impactaría la tarea de diseñar y dar
-                  importancia a la experiencia del usuario. Me pareció adecuada
-                  la elección de las mismas debido a que no es necesario contar
-                  con usuarios reales y se puede aplicar en etapas tempranas de
-                  un proyecto o incluso (como en este caso) en una aplicación
-                  existente.
+                <p className="my-8">
+                  Me llamo Agustín, quizás ya lo sepas si echaste un vistazo a
+                  mi portfolio. Vivo en Buenos Aires hace 3 años, pero nací en
+                  Corrientes Capital. Actualmente estoy trabajando diariamente
+                  para mejorar mi perfil como UX Designer, tomando diversos
+                  cursos y reforzando mi conocimiento, esto mismo me perfila
+                  como un adicto a los Black Friday en Domestika.
+                </p>
+                <p className="my-8">
+                  Soy detallista, organizado, de los que tienen su playlist
+                  actualizada y un archivo con películas ordenadas por fecha.
+                  Siempre dispuesto a viajar, siempre dispuesto a conocer. Me
+                  agradan los ambientes en donde se da valor al aprendizaje y se
+                  persiga la mejora constante.
+                </p>
+                <p className="my-8">
+                  Ese es mi desafío día a día, no limitarme, no ver las
+                  barreras.
                 </p>
               </div>
-              <div className="bg-blue-500 w-80 h-80 rounded-full flex-shrink-0 ml-48"></div>
+              <div className="w-80 h-80 flex-shrink-0 ml-48">
+                <img
+                  src="/images/profile.png"
+                  alt="Imágen de perfil"
+                  className=""
+                />
+              </div>
             </div>
             <div>
               <a

@@ -132,9 +132,8 @@ export default function HeuristicsApplicationAndRedesign() {
           <TextSection title="PROYECTO EN PROCESO" className="col-span-4">
             Actualmente este es uno de los proyectos en los que estoy
             trabajando, rediseñar toda la suite de aplicaciones de negocios,
-            aplicando los conocimientos adquiridios en materia de UX y continuar
-            perfeccionarme para lograr que las herramientas se . conjuntamente
-            con formación a los usuarios para lograr
+            aplicando los conocimientos adquiridos en materia de UX y logrando
+            así una mejor atención por parte de los usuarios.
           </TextSection>
         </Card>
         <Images height="50rem">

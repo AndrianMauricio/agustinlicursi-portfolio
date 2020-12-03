@@ -44,8 +44,8 @@ function Menu() {
 
       <MenuLink
         href="/sobre-mi"
-        label="Sobre Mi"
-        title="Sobre Mi"
+        label="Sobre Mí"
+        title="Sobre Mí"
         className="mr-6"
       />
     </ul>
