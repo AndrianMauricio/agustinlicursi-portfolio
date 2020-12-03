@@ -23,11 +23,7 @@ function Logo() {
   return (
     <Link href="/">
       <a title="Inicio" className="flex items-center justify-center">
-        <img
-          src="https://seeklogo.com/images/M/microsoft-edge-new-2020-logo-2AD376EBAA-seeklogo.com.png"
-          alt="Logo"
-          className="w-8 h-8 mr-2"
-        />
+        <img src="/images/logos/logo.svg" alt="Logo" className="w-8 h-8 mr-2" />
         <h1 className="text-xl text-white">Agustín Licursi</h1>
       </a>
     </Link>
