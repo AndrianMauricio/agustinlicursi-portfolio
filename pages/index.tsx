@@ -1,10 +1,12 @@
 import Head from 'next/head'
-import { Fragment } from 'react'
+import React, { Fragment } from 'react'
 import { Summary } from 'components/Summary'
 import { SubContent } from 'components/SubContents/SubContent'
 import { Body } from 'components/Body'
 import cn from 'classnames'
 import styles from './index.module.scss'
+import { motion } from 'framer-motion'
+import { transition } from 'utils'
 
 export default function Home() {
   return (
@@ -68,7 +70,11 @@ export default function Home() {
 
 function Banner() {
   return (
-    <div
+    <motion.div
+      animate={{ y: 0, opacity: 1 }}
+      initial={{ y: 'calc(-100% - 64px)', opacity: 0 }}
+      exit={{ y: 'calc(-100% - 64px)', opacity: 0 }}
+      transition={transition}
       className={cn(
         styles.imageBanner,
         'bg-cover bg-center grid grid-cols-2 grid-rows-1',
@@ -79,6 +85,6 @@ function Banner() {
         <br />
         UI/UX Designer.
       </h2>
-    </div>
+    </motion.div>
   )
 }

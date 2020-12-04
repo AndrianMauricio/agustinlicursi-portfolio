@@ -95,7 +95,7 @@ interface StudyProps {
 
 function Study({ title, place, year, image }: StudyProps) {
   return (
-    <Card>
+    <Card animate>
       <div className="flex items-center gap-8">
         <div className="bg-blue-50 w-24 h-24 rounded-full flex-shrink-0 overflow-hidden">
           <img src={image} className="object-fill w-full h-full" />

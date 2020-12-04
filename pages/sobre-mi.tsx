@@ -3,6 +3,7 @@ import { HeaderBanner } from 'components/HeaderBanner'
 import { Fragment } from 'react'
 import { Card } from 'components/Card'
 import Head from 'next/head'
+import { Button } from 'components/Button'
 
 export default function AboutMe() {
   return (
@@ -50,14 +51,13 @@ export default function AboutMe() {
               </div>
             </div>
             <div>
-              <a
-                href="https://drive.google.com/file/d/1YwDVtha_aO1lJ0rnLjh4XppVg_2OIi34/view?usp=sharing"
-                target="_blank"
-                rel="noopener"
-                className="inline-flex items-center justify-center w-40 h-12 bg-blue-500 text-white heading font-bold text-lg rounded-md"
+              <Button
+                link="https://drive.google.com/file/d/1YwDVtha_aO1lJ0rnLjh4XppVg_2OIi34/view?usp=sharing"
+                external
+                className=""
               >
                 CV
-              </a>
+              </Button>
             </div>
           </div>
         </Card>
